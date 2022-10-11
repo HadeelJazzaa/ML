@@ -34,7 +34,8 @@ def computeCost(X, y, theta):
 #Matrix Multiplication between two matrices A and B is valid only if the number of columns in matrix A is equal to the number of rows in matrix B.
 
     theta= np.array(theta).reshape(1,2)
-    h =  np.multiply (X , theta)
+    #h =  np.multiply (X , theta)
+    z=np.dot(X,theta) 
     
     
     for i in range (m):
